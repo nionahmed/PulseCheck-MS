@@ -62,3 +62,26 @@ Follow these steps to run PulseCheck MS on your local machine:
 ```bash
 git clone [https://github.com/nionahmed/PulseCheck-MS.git](https://github.com/nionahmed/PulseCheck-MS.git)
 cd PulseCheck-MS
+
+### Step 2: Set Up Virtual Environment
+**Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+
+**macOS/Linux:**
+```bash
+python -m venv venv
+source venv/bin/activate
+
+**Install Dependencies**
+```bash
+pip install -r requirements.txt
+
+**Run the Backend**
+```bash
+uvicorn main:app --reload
+
+**Run the Frontend**
+```bash
+streamlit run app.py
